@@ -1,8 +1,19 @@
 import { useNavigation } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView, Image } from 'react-native';
-import { getDatabase, ref, set } from "firebase/database";
-
+import { initializeApp } from 'firebase/app';
+import { ref, getDatabase, push } from "firebase/database";
+const firebaseConfig = {
+  apiKey: "AIzaSyA8PnNOuXFKGUarBqHQ7a94nIfP-boimhk",
+  authDomain: "plantit-416016.firebaseapp.com",
+  databaseURL: "https://plantit-416016-default-rtdb.firebaseio.com",
+  projectId: "plantit-416016",
+  storageBucket: "plantit-416016.appspot.com",
+  messagingSenderId: "428181209108",
+  appId: "1:428181209108:web:dd231b65b26e754486a701",
+  measurementId: "G-C1PPLEPGY6"
+};
+const app = initializeApp(firebaseConfig);
 const Payment = ({route}) => {
   const cartItems = route.params.cartItems;
   const address = route.params.address;
@@ -15,8 +26,8 @@ const Payment = ({route}) => {
   console.log("Payment Page");
 
   const pushDatabase = (cartItems, address) => {
-    const db = getDatabase();
-    const ordersRef = ref(db, 'orders');
+    const database = getDatabase(app);
+    const ordersRef = ref(database, 'orders');
     push(ordersRef, {
       address: address,
       cartItems: cartItems
@@ -25,10 +36,7 @@ const Payment = ({route}) => {
   useEffect(()=>{
     pushDatabase(cartItems, address);
   })
-  
-  // console.log(cartItems);
-  // console.log(address);
-  const [selectedOption, setSelectedOption] = useState(null);
+
   return (
     <>
       <SafeAreaView>
