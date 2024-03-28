@@ -29,6 +29,9 @@ const Home = () => {
   const handleGetRecommendation = () => {
     navigation.navigate('PlantRecommendation');
   };
+  const handleGetBlogs =()=>{
+    navigation.navigate('Blogs');
+  }
   const handleOpenCart = () => {
     navigation.navigate('AddToCart', {
       cartItems: cartItems,
@@ -112,13 +115,14 @@ const Home = () => {
             height: 90,
             flexDirection: 'row',
             justifyContent: 'center',
+            alignItems: 'center',
           }}>
           <TouchableOpacity
             style={{
               justifyContent: 'center',
               alignItems: 'center',
-              marginLeft: 5,
-              marginRight: 10,
+              marginLeft:'auto',
+              marginRight: 'auto',
             }}
             onPress={handleDiseaseAI}>
             <Image
@@ -133,8 +137,8 @@ const Home = () => {
             style={{
               justifyContent: 'center',
               alignItems: 'center',
-              marginLeft: 10,
-              marginRight: 5,
+              marginLeft: 'auto',
+              marginRight:'auto',
             }}
             onPress={handleGetRecommendation}>
             <Image
@@ -143,6 +147,22 @@ const Home = () => {
             />
             <Text style={{fontFamily: 'monospace', textAlign: 'center'}}>
               Plant Finder
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginLeft: 'auto',
+              marginRight:'auto',
+            }}
+            onPress={handleGetBlogs}>
+            <Image
+              source={require('../Icons/leaf34.png')}
+              style={{width: 40, height: 40, borderRadius: 30}}
+            />
+            <Text style={{fontFamily: 'monospace', textAlign: 'center'}}>
+              Get Blogs
             </Text>
           </TouchableOpacity>
         </View>

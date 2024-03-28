@@ -15,6 +15,8 @@ import CropsResult from './Components/screens/CropsResult';
 import GardenRecommendation from './Components/screens/GardenRecommendation'
 import Menu from './Components/screens/Menu'
 import GardenRecommendationResults from './Components/screens/GardenRecommendationResults'
+import Blog from './Components/screens/Blog'
+import BlogView from './Components/screens/BlogView'
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -30,6 +32,16 @@ const App = () => {
         <Stack.Screen
           name="AddressInput"
           component={AddressInput}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Blogs"
+          component={Blog}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="BlogView"
+          component={BlogView}
           options={{ headerShown: false }}
         />
         <Stack.Screen
