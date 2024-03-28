@@ -17,16 +17,39 @@ import Menu from './Components/screens/Menu'
 import GardenRecommendationResults from './Components/screens/GardenRecommendationResults'
 import Blog from './Components/screens/Blog'
 import BlogView from './Components/screens/BlogView'
+import BlogUpload from './Components/screens/BlogUpload'
+import firebase from '@react-native-firebase/app';
+const firebaseConfig = {
+  apiKey: 'AIzaSyA8PnNOuXFKGUarBqHQ7a94nIfP-boimhk',
+  authDomain: 'plantit-416016.firebaseapp.com',
+  databaseURL: 'https://plantit-416016-default-rtdb.firebaseio.com',
+  projectId: 'plantit-416016',
+  storageBucket: 'plantit-416016.appspot.com',
+  messagingSenderId: '428181209108',
+  appId: '1:428181209108:web:dd231b65b26e754486a701',
+  measurementId: 'G-C1PPLEPGY6',
+};
 
+const initFirebase = () => {
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
+  console.log('Firebase Initialized');
+};
 const App = () => {
+  initFirebase();
   const Stack = createNativeStackNavigator();
-
   return (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
           name="Home"
           component={Home}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="BlogUpload"
+          component={BlogUpload}
           options={{ headerShown: false }}
         />
         <Stack.Screen

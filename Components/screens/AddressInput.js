@@ -10,6 +10,7 @@ import {
   FlatList,
   SafeAreaView,
   ScrollView,
+  StatusBar
 } from 'react-native';
 import RNUpiPayment from 'react-native-upi-payment';
 import RazorpayCheckout from 'react-native-razorpay';
@@ -122,27 +123,24 @@ const AddressInput = ({route}) => {
   };
   return (
     <SafeAreaView>
-      <Text
-        style={{
-          position: 'absolute',
-          top: 10,
-          left: 10,
-          fontSize: 25,
-          color: '#000000',
-          zIndex: 1,
-          fontWeight: '900',
-          fontFamily: 'monospace',
-        }}>
-        Plant<Text style={{color: 'red', fontWeight: '900'}}>It</Text>
-      </Text>
-      <View
-        style={{
-          backgroundColor: '#E2F4C5',
-          height: 50,
-          flexDirection: 'row',
-          justifyContent: 'flex-end',
-          marginBottom: 10,
-        }}></View>
+      <StatusBar barStyle="light-content" backgroundColor="#E2F4C5" />
+      <View style={{height: 50, backgroundColor: '#E2F4C5'}}>
+        <Text
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 10,
+            fontSize: 25,
+            color: '#000000',
+            zIndex: 1,
+            fontWeight: '900',
+            fontFamily: 'monospace',
+          }}>
+          Plant<Text style={{color: 'red', fontWeight: '900'}}>It</Text>
+        </Text>
+      </View>
+      <View style={{height:10}}></View>
+
       <View
         style={{
           height: 50,

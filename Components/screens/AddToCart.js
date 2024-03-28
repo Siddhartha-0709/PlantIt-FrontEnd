@@ -8,6 +8,7 @@ import {
   Image,
   ScrollView,
   SafeAreaView,
+  StatusBar
 } from "react-native";
 
 const AddToCart = ({ route }) => {
@@ -32,28 +33,22 @@ const AddToCart = ({ route }) => {
   
   return (
     <SafeAreaView>
-      <Text
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 10,
-          fontSize: 25,
-          color: "#000000",
-          zIndex: 1,
-          fontWeight: "900",
-          fontFamily: "monospace",
-        }}
-      >
-        Plant<Text style={{ color: "red", fontWeight: "900" }}>It</Text>
-      </Text>
-      <View
-        style={{
-          backgroundColor: "#E2F4C5",
-          height: 40,
-          flexDirection: "row",
-          justifyContent: "flex-end",
-        }}
-      ></View>
+      <StatusBar barStyle="light-content" backgroundColor="#E2F4C5" />
+      <View style={{height: 50, backgroundColor: '#E2F4C5'}}>
+        <Text
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 10,
+            fontSize: 25,
+            color: '#000000',
+            zIndex: 1,
+            fontWeight: '900',
+            fontFamily: 'monospace',
+          }}>
+          Plant<Text style={{color: 'red', fontWeight: '900'}}>It</Text>
+        </Text>
+      </View>
       <View style={{height:10}}></View>
       <View
         style={{

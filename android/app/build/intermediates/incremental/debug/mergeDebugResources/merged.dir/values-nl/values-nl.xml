@@ -44,7 +44,7 @@
     <string name="clear_text_end_icon_content_description">Tekst wissen</string>
     <string gender="unknown" name="combobox_description">Combivak</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Aanzetten</string>
-    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s werkt niet, tenzij je Google Play-services inschakelt.</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s werkt niet, tenzij je Google Play-services aanzet.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play-services aanzetten</string>
     <string msgid="7153882981874058840" name="common_google_play_services_install_button">Installeren</string>
     <string name="common_google_play_services_install_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die je nog niet op je apparaat hebt.</string>

@@ -10,7 +10,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@react-native-firebase/app": "^19.1.0",
+    "@react-native-firebase/app": "^19.1.1",
+    "@react-native-firebase/database": "^19.1.1",
+    "@react-native-firebase/storage": "^19.1.1",
     "@react-navigation/native": "^6.1.14",
     "@react-navigation/native-stack": "^6.9.22",
     "axios": "^1.6.7",
