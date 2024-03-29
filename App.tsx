@@ -31,6 +31,7 @@ const firebaseConfig = {
 };
 import FirstScreen from './Components/screens/FirstScreen'
 import SecondScreen from './Components/screens/SecondScreen'
+import Profile from './Components/screens/Profile'
 
 const initFirebase = () => {
   if (!firebase.apps.length) {
@@ -44,6 +45,11 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen
+          name="Profile"
+          component={Profile}
+          options={{ headerShown: false }}
+        />  
       <Stack.Screen
           name="FirstScreen"
           component={FirstScreen}
