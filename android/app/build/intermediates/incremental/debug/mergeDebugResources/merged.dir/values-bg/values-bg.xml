@@ -60,8 +60,12 @@
     <string name="common_open_on_phone">Отваряне на телефона</string>
     <string name="common_signin_button_text">Вход</string>
     <string name="common_signin_button_text_long">Вход с Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Връзката е копирана в буферната памет"</string>
     <string name="error_icon_content_description">Грешка</string>
     <string name="exposed_dropdown_menu_content_description">Показване на падащото меню</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Копиране на връзката"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Отваряне в браузър"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Споделяне на връзката"</string>
     <string gender="unknown" name="header_description">Заглавие</string>
     <string name="icon_content_description">Икона за диалогов прозорец</string>
     <string gender="unknown" name="image_description">Изображение</string>

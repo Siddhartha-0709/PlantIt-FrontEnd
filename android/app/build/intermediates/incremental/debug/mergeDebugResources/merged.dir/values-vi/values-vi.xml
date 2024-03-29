@@ -61,8 +61,12 @@
     <string name="common_open_on_phone">Mở trên điện thoại</string>
     <string name="common_signin_button_text">Đăng nhập</string>
     <string name="common_signin_button_text_long">Đăng nhập bằng Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Đã sao chép đường liên kết vào bảng nhớ tạm"</string>
     <string name="error_icon_content_description">Lỗi</string>
     <string name="exposed_dropdown_menu_content_description">Hiển thị menu thả xuống</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Sao chép đường liên kết"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Mở trong trình duyệt"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Chia sẻ liên kết"</string>
     <string gender="unknown" name="header_description">Tiêu đề</string>
     <string name="icon_content_description">Biểu tượng hộp thoại</string>
     <string gender="unknown" name="image_description">Hình ảnh</string>

@@ -58,8 +58,12 @@
     <string name="common_open_on_phone">ফ\'নত খোলক</string>
     <string name="common_signin_button_text">ছাইন ইন কৰক</string>
     <string name="common_signin_button_text_long">Googleৰ জৰিয়তে ছাইন ইন কৰক</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"লিংক ক্লিপব’ৰ্ডত প্ৰতিলিপি কৰা হ’ল"</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"লিংক প্ৰতিলিপি কৰক"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"ব্ৰাউজাৰত খোলক"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"লিংক শ্বেয়াৰ কৰক"</string>
     <string name="icon_content_description">Dialog Icon</string>
     <string gender="unknown" name="image_description">ছবি</string>
     <string gender="unknown" name="imagebutton_description">বুটাম, ছবি</string>

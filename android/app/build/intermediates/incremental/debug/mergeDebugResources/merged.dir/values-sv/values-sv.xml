@@ -60,8 +60,12 @@
     <string name="common_open_on_phone">Öppna på mobilen</string>
     <string name="common_signin_button_text">Logga in</string>
     <string name="common_signin_button_text_long">Logga in med Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Länk kopierad till Urklipp"</string>
     <string name="error_icon_content_description">Fel</string>
     <string name="exposed_dropdown_menu_content_description">Visa rullgardinsmenyn</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopiera länk"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Öppna i webbläsaren"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Dela länk"</string>
     <string gender="unknown" name="header_description">Rubrik</string>
     <string name="icon_content_description">Dialogikon</string>
     <string gender="unknown" name="image_description">Bild</string>

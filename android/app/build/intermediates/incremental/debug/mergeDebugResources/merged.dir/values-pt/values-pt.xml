@@ -31,6 +31,10 @@
     <string gender="unknown" name="catalyst_dev_menu_header">Menu de desenvolvedor de reações nativas (%1$s)</string>
     <string gender="unknown" name="catalyst_dev_menu_sub_header">%1$s em veiculação</string>
     <string gender="unknown" name="combobox_description">Caixa de combinação</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Link copiado para a área de transferência"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copiar link"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Abrir no navegador"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Compartilhar link"</string>
     <string gender="unknown" name="header_description">Título</string>
     <string gender="unknown" name="image_description">Imagem</string>
     <string gender="unknown" name="imagebutton_description">Botão, imagem</string>

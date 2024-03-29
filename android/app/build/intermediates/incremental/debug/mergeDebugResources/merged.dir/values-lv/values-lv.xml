@@ -62,8 +62,12 @@
     <string name="common_open_on_phone">Atvērt tālrunī</string>
     <string name="common_signin_button_text">Pierakstīties</string>
     <string name="common_signin_button_text_long">Pierakstīties ar Google kontu</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Saite ir kopēta starpliktuvē."</string>
     <string name="error_icon_content_description">Kļūda</string>
     <string name="exposed_dropdown_menu_content_description">Rādīt nolaižamo izvēlni</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopēt saiti"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Atvērt pārlūkprogrammā"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Kopīgot saiti"</string>
     <string gender="unknown" name="header_description">Virsraksts</string>
     <string name="icon_content_description">Dialoglodziņa ikona</string>
     <string gender="unknown" name="image_description">Attēls</string>

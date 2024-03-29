@@ -57,8 +57,12 @@
     <string name="common_open_on_phone">ስልክ ላይ ክፈት</string>
     <string name="common_signin_button_text">ግባ</string>
     <string name="common_signin_button_text_long">በGoogle ይግቡ</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"አገናኝ ወደ ቅንጥብ ሰሌዳ ተቀድቷል"</string>
     <string name="error_icon_content_description">ስህተት</string>
     <string name="exposed_dropdown_menu_content_description">ተቆልቋይ ምናሌን አሳይ</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"አገናኝ ቅዳ"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"በአሳሽ ውስጥ ክፈት"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"አገናኝ አጋራ"</string>
     <string name="icon_content_description">የንግግር አዶ</string>
     <string name="item_view_role_description">ትር</string>
     <string name="material_clock_toggle_content_description">AM ወይም PM ይምረጡ</string>

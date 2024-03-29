@@ -57,8 +57,12 @@
     <string name="common_open_on_phone">Obre al telèfon</string>
     <string name="common_signin_button_text">Inicia sessió</string>
     <string name="common_signin_button_text_long">Inicia la sessió amb Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"S\'ha copiat l\'enllaç al porta-retalls"</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Mostra el menú desplegable</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copia l\'enllaç"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Obre al navegador"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Comparteix l\'enllaç"</string>
     <string name="icon_content_description">Icona del quadre de diàleg</string>
     <string name="item_view_role_description">Tabulador</string>
     <string name="material_clock_toggle_content_description">Selecciona a. m. o p. m.</string>

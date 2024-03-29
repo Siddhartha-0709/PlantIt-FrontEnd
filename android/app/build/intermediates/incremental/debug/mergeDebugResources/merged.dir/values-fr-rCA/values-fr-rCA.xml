@@ -60,8 +60,12 @@
     <string name="common_open_on_phone">Ouvrir sur le téléphone</string>
     <string name="common_signin_button_text">Connexion</string>
     <string name="common_signin_button_text_long">Se connecter avec Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Lien copié dans le presse-papiers"</string>
     <string name="error_icon_content_description">Erreur</string>
     <string name="exposed_dropdown_menu_content_description">Afficher le menu déroulant</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copier le lien"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Ouvrir dans le navigateur"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Partager le lien"</string>
     <string gender="unknown" name="header_description">Titre</string>
     <string name="icon_content_description">Icône de boîte de dialogue</string>
     <string gender="unknown" name="imagebutton_description">Bouton, image</string>

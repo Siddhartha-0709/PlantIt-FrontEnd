@@ -62,8 +62,12 @@
     <string name="common_open_on_phone">Отвори на телефону</string>
     <string name="common_signin_button_text">Пријави ме</string>
     <string name="common_signin_button_text_long">Пријави ме на Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Линк је копиран у привремену меморију"</string>
     <string name="error_icon_content_description">Грешка</string>
     <string name="exposed_dropdown_menu_content_description">Прикажи падајући мени</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Копирај линк"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Отвори у прегледачу"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Дели линк"</string>
     <string gender="unknown" name="header_description">Заглавље</string>
     <string name="icon_content_description">Икона дијалога</string>
     <string gender="unknown" name="image_description">Слика</string>

@@ -65,8 +65,12 @@
     <string name="common_open_on_phone">فتح على الهاتف</string>
     <string name="common_signin_button_text">تسجل الدخول</string>
     <string name="common_signin_button_text_long">‏تسجيل الدخول عبر Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"تم نسخ الرابط إلى الحافظة."</string>
     <string name="error_icon_content_description">خطأ</string>
     <string name="exposed_dropdown_menu_content_description">عرض القائمة المنسدلة</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"نسخ الرابط"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"فتح في المتصفح"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"مشاركة الرابط"</string>
     <string gender="unknown" name="header_description">العنوان</string>
     <string name="icon_content_description">رمز مربع الحوار</string>
     <string gender="unknown" name="image_description">صورة</string>

@@ -1,8 +1,11 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 
 const FirstScreen = () => {
-    const handleGetStarted = () => {
+  const navigation = useNavigation();  
+  const handleGetStarted = () => {
+      navigation.navigate('SecondScreen')
     };
 
   return (

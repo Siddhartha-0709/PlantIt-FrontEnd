@@ -58,8 +58,12 @@
     <string name="common_open_on_phone">फोनमा खोल्नुहोस्</string>
     <string name="common_signin_button_text">साइन इन गर्नुहोस्</string>
     <string name="common_signin_button_text_long">Google मार्फत साइन‍ इन गर्नुहोस्</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"क्लिपबोर्डमा लिंक प्रतिलिपि गरियो"</string>
     <string name="error_icon_content_description">त्रुटि</string>
     <string name="exposed_dropdown_menu_content_description">ड्रपडाउन मेनु देखाउनुहोस्</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"लिंक प्रतिलिपि गर्नुहोस्"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"ब्राउजरमा खोल्नुहोस्"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"लिंक सेयर गर्नुहोस्"</string>
     <string name="icon_content_description">संवादको आइकन</string>
     <string gender="unknown" name="image_description">फोटो</string>
     <string gender="unknown" name="imagebutton_description">बटन, फोटो</string>

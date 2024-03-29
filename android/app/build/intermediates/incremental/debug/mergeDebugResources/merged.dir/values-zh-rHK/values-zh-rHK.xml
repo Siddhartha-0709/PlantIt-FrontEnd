@@ -61,8 +61,12 @@
     <string name="common_open_on_phone">在手機開啟</string>
     <string name="common_signin_button_text">登入</string>
     <string name="common_signin_button_text_long">透過 Google 登入</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"連結已複製到剪貼簿"</string>
     <string name="error_icon_content_description">錯誤</string>
     <string name="exposed_dropdown_menu_content_description">顯示下拉式選單</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"複製連結"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"在瀏覽器中開啟"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"分享連結"</string>
     <string gender="unknown" name="header_description">標題</string>
     <string name="icon_content_description">對話框圖示</string>
     <string gender="unknown" name="image_description">圖像</string>

@@ -63,8 +63,12 @@
     <string name="common_open_on_phone">פתח בטלפון</string>
     <string name="common_signin_button_text">כניסה</string>
     <string name="common_signin_button_text_long">‏היכנס באמצעות Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"הקישור הועתק ללוח"</string>
     <string name="error_icon_content_description">שגיאה</string>
     <string name="exposed_dropdown_menu_content_description">הצגת התפריט הנפתח</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"העתקת הקישור"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"פתיחה בדפדפן"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"לשיתוף הקישור"</string>
     <string gender="unknown" name="header_description">כותרת</string>
     <string name="icon_content_description">סמל לתיבת דו-שיח</string>
     <string gender="unknown" name="image_description">תמונה</string>

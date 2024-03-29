@@ -60,8 +60,12 @@
     <string name="common_open_on_phone">Άνοιγμα σε τηλέφωνο</string>
     <string name="common_signin_button_text">Σύνδεση</string>
     <string name="common_signin_button_text_long">Συνδεθείτε με το Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Ο σύνδεσμος αντιγράφηκε στο πρόχειρο"</string>
     <string name="error_icon_content_description">Σφάλμα</string>
     <string name="exposed_dropdown_menu_content_description">Εμφάνιση αναπτυσσόμενου μενού</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Αντιγραφή συνδέσμου"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Άνοιγμα σε πρόγραμμα περιήγησης"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Κοινοποίηση συνδέσμου"</string>
     <string gender="unknown" name="header_description">Επικεφαλίδα</string>
     <string name="icon_content_description">Εικονίδιο παραθύρου διαλόγου</string>
     <string gender="unknown" name="image_description">Εικόνα</string>
