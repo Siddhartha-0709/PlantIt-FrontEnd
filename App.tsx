@@ -29,6 +29,8 @@ const firebaseConfig = {
   appId: '1:428181209108:web:dd231b65b26e754486a701',
   measurementId: 'G-C1PPLEPGY6',
 };
+import FirstScreen from './Components/screens/FirstScreen'
+import SecondScreen from './Components/screens/SecondScreen'
 
 const initFirebase = () => {
   if (!firebase.apps.length) {
@@ -42,6 +44,17 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen
+          name="FirstScreen"
+          component={FirstScreen}
+          options={{ headerShown: false }}
+        />
+      <Stack.Screen
+          name="SecondScreen"
+          component={SecondScreen}
+          options={{ headerShown: false }}
+        /> 
+      
         <Stack.Screen
           name="Home"
           component={Home}
