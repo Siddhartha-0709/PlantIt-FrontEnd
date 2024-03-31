@@ -16,7 +16,7 @@ const CropsResult = ({ route }) => {
   console.log(result);
   return (
     <SafeAreaView style={{ backgroundColor: "#000000", height: "100%" }}>
-      <TouchableOpacity>
+      {/* <TouchableOpacity>
         <Image
           source={require("../Icons/goback1.png")}
           style={{
@@ -27,7 +27,7 @@ const CropsResult = ({ route }) => {
             marginTop: 30,
           }}
         />
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <Text
         style={{
           color: "#ffffff",

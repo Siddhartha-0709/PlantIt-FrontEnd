@@ -56,7 +56,7 @@ const DiseaseAI = () => {
   return (
     <>
       <SafeAreaView style={{ backgroundColor: "#000000", height: "100%" }}>
-        <TouchableOpacity
+        {/* <TouchableOpacity
           style={{ position: "absolute", top: 40,left:1 }}
           onPress={() => navigation.navigate("DiseaseAI")}
         >
@@ -69,7 +69,7 @@ const DiseaseAI = () => {
               tintColor: "white",
             }}
           />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         <View style={{ position: "absolute", top: 10, flexDirection: "row" }}>
           <Text
             style={{

@@ -1,46 +1,147 @@
-import React, { useEffect, useState } from 'react';
-import { Image, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import React, {useEffect, useState} from 'react';
+import {
+  Image,
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 
-const Profile = () => {
+const Profile = ({route}) => {
+  const userAccount = route.params.userAccount;
+  const navigation = useNavigation();
+  const handleAboutUs = ()=>{
+    navigation.navigate('AboutUs')
+  }
+  const handlePrivacyPolicy = ()=>{
+    navigation.navigate('Privacy')
+  }
+  const handleOrders = ()=>{
+    navigation.navigate('Orders',{
+      userAccount: userAccount
+    })
+  }
+  const handleSignOut = ()=>{
+    navigation.navigate('FirstScreen');
+  }
   return (
     <SafeAreaView>
       <StatusBar barStyle="light-content" backgroundColor="#E2F4C5" />
-      <View style={{ backgroundColor: 'red', width: 15, justifyContent: 'center', alignItems: 'center', borderRadius: 50, position: 'absolute', zIndex: 1, right: 33, top: 13 }}></View>
-      <Text style={{ position: 'absolute', top: 0, left: 10, fontSize: 30, color: '#000000', zIndex: 1, fontWeight: '900', fontFamily: 'monospace' }}>
-        Plant<Text style={{ color: 'red', fontWeight: '900' }}>It</Text>
-      </Text>
-      <View style={{ backgroundColor: '#E2F4C5', height: 65, flexDirection: 'row', justifyContent: 'flex-end', paddingBottom: 3 }}></View>
+      <View style={{height: 50, backgroundColor: '#E2F4C5'}}>
+          <Text
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 10,
+              fontSize: 25,
+              color: '#000000',
+              zIndex: 1,
+              fontWeight: '900',
+              fontFamily: 'monospace',
+            }}>
+            Plant<Text style={{color: 'red', fontWeight: '900'}}>It</Text>
+          </Text>
+        </View>
 
       {/* Profile Rectangle Container */}
-      <View style={styles.profileContainer}>
-        <Text style={{ position: 'absolute', top: 10, left: 45, fontSize: 25, color: '#FEFBF6', zIndex: 1, fontWeight: '900', fontFamily: 'monospace' }}>Profile</Text>
+      <View
+        style={{
+          height: 50,
+          marginBottom: 10,
+          backgroundColor: '#000000',
+          minWidth: 200,
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          borderRadius: 30,
+          alignContent: 'center',
+          justifyContent: 'center',
+          marginTop: 30,
+        }}>
+        <Text
+          style={{
+            fontSize: 18,
+            color: '#FFFFFF',
+            fontWeight: '600',
+            fontFamily: 'monospace',
+            textAlign: 'center',
+          }}>
+          Profile
+        </Text>
+      </View>
 
-        <TouchableOpacity>
-          <Image source={require('../Icons/checkout.png')} style={{ width: 27, height: 27, position: 'absolute', top: 125, left: 0 }} />
-          <Text style={{ color: 'black', position: 'absolute', top: 120, left: 45, fontSize: 25 }}>My Orders</Text>
-        <View style={{ borderBottomWidth: 1, borderBottomColor: 'gray', position: 'absolute', top: 155, left: 0, width: '100%' }}></View>
+      <View style={{paddingLeft: 20, paddingRight: 10, marginTop: 150}}>
+        <TouchableOpacity
+          style={{
+            height: 70,
+            borderBottomWidth: 1,
+            flexDirection: 'row',
+            alignItems: 'center',
+          }}
+          onPress={handleOrders}>
+          <Image
+            source={require('../Icons/checkout.png')}
+            style={{width: 27, height: 27, marginRight: 20}}
+          />
+          <Text style={{color: 'black', fontSize: 25, fontFamily: 'monospace'}}>
+            My Orders
+          </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity>
-          <Image source={require('../Icons/about.png')} style={{ width: 23, height: 23, position: 'absolute', top: 195, left: 0 }} />
-          <Text style={{ color: 'black', position: 'absolute', top: 190, left: 45, fontSize: 25 }}>About Us</Text>
-        <View style={{ borderBottomWidth: 1, borderBottomColor: 'gray', position: 'absolute', top: 225, left: 0, width: '100%' }}></View>
+        <TouchableOpacity
+          style={{
+            height: 70,
+            borderBottomWidth: 1,
+            flexDirection: 'row',
+            alignItems: 'center',
+          }}
+          onPress={handleAboutUs}
+          >
+          <Image
+            source={require('../Icons/about.png')}
+            style={{width: 23, height: 23, marginRight: 20}}
+          />
+          <Text style={{color: 'black', fontSize: 25, fontFamily: 'monospace'}}>
+            About Us
+          </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity>
-          <Image source={require('../Icons/privacy.png')} style={{ width: 25, height: 25, position: 'absolute', top: 265 }} />
-          <Text style={{ color: 'black', position: 'absolute', top: 260, left: 40, fontSize: 25 }}>Privacy Policy</Text>
-        <View style={{ borderBottomWidth: 1, borderBottomColor: 'gray', position: 'absolute', top: 295, left: 0, width: '100%' }}></View>
+        <TouchableOpacity
+          style={{
+            height: 70,
+            borderBottomWidth: 1,
+            flexDirection: 'row',
+            alignItems: 'center',
+          }}
+          onPress={handlePrivacyPolicy}>
+          <Image
+            source={require('../Icons/privacy.png')}
+            style={{width: 25, height: 25, marginRight: 20}}
+          />
+          <Text style={{color: 'black', fontSize: 25, fontFamily: 'monospace'}}>
+            Privacy Policy
+          </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity>
-          <Image source={require('../Icons/logout.png')} style={{ width: 25, height: 25, position: 'absolute', top: 335, left: 0 }} />
-          <Text style={{ color: 'black', position: 'absolute', top: 330, left: 45, fontSize: 25 }}>Sign Out</Text>
+        <TouchableOpacity
+          style={{height: 70, flexDirection: 'row', alignItems: 'center'}}
+          onPress={handleSignOut}
+          >
+          <Image
+            source={require('../Icons/logout.png')}
+            style={{width: 25, height: 25, marginRight: 15, marginLeft: 5}}
+          />
+          <Text style={{color: 'black', fontSize: 25, fontFamily: 'monospace'}}>
+            Sign Out
+          </Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
-  )
-}
+  );
+};
 
 export default Profile;
 

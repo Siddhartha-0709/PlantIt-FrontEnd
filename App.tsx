@@ -32,6 +32,9 @@ const firebaseConfig = {
 import FirstScreen from './Components/screens/FirstScreen'
 import SecondScreen from './Components/screens/SecondScreen'
 import Profile from './Components/screens/Profile'
+import AboutUs from './Components/screens/AboutUs'
+import PrivacyPolicy from './Components/screens/PrivacyPolicy'
+import Order from './Components/screens/Order'
 
 const initFirebase = () => {
   if (!firebase.apps.length) {
@@ -46,11 +49,6 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
       <Stack.Screen
-          name="Profile"
-          component={Profile}
-          options={{ headerShown: false }}
-        />  
-      <Stack.Screen
           name="FirstScreen"
           component={FirstScreen}
           options={{ headerShown: false }}
@@ -60,6 +58,21 @@ const App = () => {
           component={SecondScreen}
           options={{ headerShown: false }}
         /> 
+      <Stack.Screen
+          name="Profile"
+          component={Profile}
+          options={{ headerShown: false }}
+        />  
+      <Stack.Screen
+          name="AboutUs"
+          component={AboutUs}
+          options={{ headerShown: false }}
+        />  
+      <Stack.Screen
+          name="Privacy"
+          component={PrivacyPolicy}
+          options={{ headerShown: false }}
+        />  
       
         <Stack.Screen
           name="Home"
@@ -84,6 +97,11 @@ const App = () => {
         <Stack.Screen
           name="BlogView"
           component={BlogView}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Orders"
+          component={Order}
           options={{ headerShown: false }}
         />
         <Stack.Screen

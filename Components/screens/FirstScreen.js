@@ -11,7 +11,7 @@ const FirstScreen = () => {
   return (
     <View style={[styles.container, { backgroundColor: 'white' }]}>
       <Image
-        source={require('../Icons/output.png')}
+        source={require('../Icons/logo2.png')}
         style={styles.backgroundImage}
       />
       <View style={styles.rectanglesContainer}>
@@ -39,8 +39,8 @@ const styles = StyleSheet.create({
   },
   backgroundImage: {
     flex: 1,
-    width: '100%',
-    height: '50%',
+    width: 400,
+    height:400,
     position: 'absolute',
     zIndex: -1,
     marginTop: 80,

@@ -62,11 +62,11 @@ const DiseaseAIResult = ({ route }) => {
   return (
     <SafeAreaView style={{ backgroundColor: "#000000", height: "100%" }}>
       <View style={{ backgroundColor: "#000000", height: 400, paddingTop: 40 }}>
-        <TouchableOpacity style={{position:'absolute', top: 40,}}
+        {/* <TouchableOpacity style={{position:'absolute', top: 40,}}
         onPress={() => navigation.navigate('DiseaseAI')}
         >
           <Image source={require('../Icons/goback1.png')} style={{ width: 25, height: 25, marginLeft: 20, tintColor:'white'}} />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         <View style={{ marginTop: 10, marginBottom: 10 }}>
           <Text
             style={{

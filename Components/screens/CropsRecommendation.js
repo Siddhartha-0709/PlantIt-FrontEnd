@@ -108,7 +108,7 @@ const CropsRecommendation = () => {
           </Text>
         </View>
       ) : null}
-      <TouchableOpacity>
+      {/* <TouchableOpacity>
         <Image
           source={require("../Icons/goback1.png")}
           style={{
@@ -119,7 +119,7 @@ const CropsRecommendation = () => {
             marginTop: 30,
           }}
         />
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <Text
         style={{
           color: "#ffffff",

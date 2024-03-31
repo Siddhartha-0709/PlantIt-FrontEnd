@@ -7,14 +7,29 @@ import {
   Text,
   TouchableOpacity,
   View,
-  ToastAndroid
+  ToastAndroid,
+  ActivityIndicator
 } from 'react-native';
 import React, {useEffect, useState} from 'react';
 import {useNavigation} from '@react-navigation/core';
 import axios from 'axios';
 
-const Home = () => {
+const Home = ({route}) => {
   const navigation = useNavigation();
+  const [showLoad, setShowLoad]= useState(false);
+  const user = route.params.user;
+  // console.log(user);
+  const userName = user.givenName+' '+user.familyName;
+  const email = user.email;
+  const photo = user.photo; 
+  const id = user.id;
+  const userAccount = {
+    name :userName,
+    email: email,
+    photo: photo,
+    id: id
+  }
+  console.log( `User Name`+userName+ ' '+ `email`+email+ `photo`+photo);
   const [serverResponse, setServerResponse] = useState([]);
   const [cartItems, setCartItems] = useState([]);
   const handleAddToCart = item => {
@@ -30,23 +45,32 @@ const Home = () => {
     navigation.navigate('PlantRecommendation');
   };
   const handleGetBlogs =()=>{
-    navigation.navigate('Blogs');
+    navigation.navigate('Blogs',{userAccount: userAccount});
   }
   const handleOpenCart = () => {
     navigation.navigate('AddToCart', {
       cartItems: cartItems,
+      userAccount: userAccount,
+      user:user
     });
   };
+  const handleProfile =()=>{
+    navigation.navigate('Profile',{
+      userAccount: userAccount
+    })
+  }
   useEffect(() => {
     getProducts();
   }, []);
   const getProducts = async () => {
     try {
+      setShowLoad(true)
       const response = await axios.get(
         'https://plantit-backend.onrender.com/products',
       );
       console.log(response.data);
       setServerResponse(response.data);
+      setShowLoad(false);
     } catch (error) {
       console.error('Error:', error);
     }
@@ -91,7 +115,9 @@ const Home = () => {
             style={{width: 25, height: 25, marginTop: 20,zIndex:1}}
           />
         </TouchableOpacity>
-        <TouchableOpacity style={{marginLeft: 5, marginTop: 0, marginRight: 5}}>
+        <TouchableOpacity style={{marginLeft: 5, marginTop: 0, marginRight: 5}}
+        onPress={handleProfile}
+        >
           <Image
             source={require('../Icons/user.png')}
             style={{width: 25, height: 25, marginTop: 20}}
@@ -129,7 +155,7 @@ const Home = () => {
               source={require('../Icons/plantdoc.png')}
               style={{width: 40, height: 40, borderRadius: 30}}
             />
-            <Text style={{fontFamily: 'monospace', textAlign: 'center'}}>
+            <Text style={{fontFamily: 'monospace', textAlign: 'center', color:'#000000'}}>
               LeafLens AI
             </Text>
           </TouchableOpacity>
@@ -145,7 +171,7 @@ const Home = () => {
               source={require('../Icons/leaf34.png')}
               style={{width: 40, height: 40, borderRadius: 30}}
             />
-            <Text style={{fontFamily: 'monospace', textAlign: 'center'}}>
+            <Text style={{fontFamily: 'monospace', textAlign: 'center', color:'#000000'}}>
               Plant Finder
             </Text>
           </TouchableOpacity>
@@ -161,12 +187,15 @@ const Home = () => {
               source={require('../Icons/leaf34.png')}
               style={{width: 40, height: 40, borderRadius: 30}}
             />
-            <Text style={{fontFamily: 'monospace', textAlign: 'center'}}>
+            <Text style={{fontFamily: 'monospace', textAlign: 'center', color:'#000000'}}>
               Get Blogs
             </Text>
           </TouchableOpacity>
         </View>
-        {Object.keys(serverResponse).map(key => {
+        {showLoad?(<><ActivityIndicator size="large" style={{marginTop:100}} />
+            <Text style={{textAlign:'center', fontFamily:'monospace', color:'#000000'}}>Getting the Best Products. . .</Text>
+        </>):(<>
+          {Object.keys(serverResponse).map(key => {
           const item = serverResponse[key];
           const limitedDescription =
             item.description.length > 172
@@ -202,6 +231,7 @@ const Home = () => {
                     fontSize: 18,
                     fontWeight: '900',
                     marginTop: 10,
+                    color:'#000000'
                   }}>
                   {item.name}
                 </Text>
@@ -242,6 +272,7 @@ const Home = () => {
                     fontWeight: '800',
                     textAlign: 'left',
                     marginTop: 14,
+                    color:'#000000'
                   }}>
                   Price- {item.price}/-
                 </Text>
@@ -272,6 +303,8 @@ const Home = () => {
             </View>
           );
         })}
+        </>)}
+        
       </ScrollView>
     </SafeAreaView>
   );

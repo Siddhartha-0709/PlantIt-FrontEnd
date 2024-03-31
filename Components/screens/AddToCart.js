@@ -13,7 +13,8 @@ import {
 
 const AddToCart = ({ route }) => {
   const navigation = useNavigation();
-
+  const userAccount = route.params.userAccount;
+  const user= route.params.user;
   const [cartItems, setCartItems] = useState(route.params.cartItems);
   const handleRemoveItem = (itemToRemove) => {
     const updatedCartItems = cartItems.filter(item => item !== itemToRemove);
@@ -21,7 +22,7 @@ const AddToCart = ({ route }) => {
     console.log('Item removed:', itemToRemove);
   };
   const handleAddressInput =()=>{
-    navigation.navigate('AddressInput',{cartItems:cartItems, totalCost:totalCost()})
+    navigation.navigate('AddressInput',{cartItems:cartItems, totalCost:totalCost()+100, userAccount: userAccount, user:user})
   }
   const totalCost = ()=>{
     var total = 0;
@@ -76,7 +77,7 @@ const AddToCart = ({ route }) => {
         </Text>
       </View>
       <ScrollView
-      style={{paddingLeft:5, paddingRight:5,height:'75%'}}
+      style={{paddingLeft:5, paddingRight:5,height:'70%'}}
       >
         {
         cartItems.length!=0?(
@@ -163,7 +164,7 @@ const AddToCart = ({ route }) => {
                 textAlign: "right",
               }}
             >
-              Price: {item.price}/-
+              Price: ₹{item.price}
             </Text>
           </View>
         </View>
@@ -179,16 +180,16 @@ const AddToCart = ({ route }) => {
         </View>
         </>)}
       </ScrollView>
-      {cartItems.length!=0?(<>
-      <Text style={{position:'absolute', zIndex:1,bottom:-40,right:10, color:'black', fontSize:20, fontWeight:'700',fontFamily:'monospace', elevation:5}}>Total Amount-₹{totalCost()}</Text>
-      </>):(<></>)}
-      {cartItems.length!=0?(<View style={{position:'absolute', bottom:-90, zIndex:1, paddingHorizontal:5}}>
-          <TouchableOpacity style={{backgroundColor:'#FF204E', height:50,width:400, borderRadius:10, justifyContent:'center', alignItems:'center',elevation:5}}
+      {cartItems.length!=0?(<View style={{borderTopRightRadius:10, borderTopLeftRadius:10}}>
+      <Text style={{position:'absolute', zIndex:1,bottom:-55,right:10, color:'black', fontSize:20, fontWeight:'700',fontFamily:'monospace', elevation:5}}>Total Amount-₹{totalCost()+100}</Text>
+      <Text style={{position:'absolute', zIndex:1,bottom:-70,right:10, color:'grey', fontSize:12, fontWeight:'700',fontFamily:'monospace', elevation:5}}>Incl. Cart Value + ₹100(Taxes and Delivery Charges)</Text>
+      <TouchableOpacity style={{backgroundColor:'#FF204E', height:50,width:400, borderRadius:10, justifyContent:'center', alignItems:'center', marginLeft:'auto',marginRight:'auto', position:'absolute', bottom:-125,zIndex:1,right:6, left:6}}
           onPress={handleAddressInput}
           >
-            <Text style={{color:'#FFFFFF', fontSize:20, fontFamily:'monospace', fontWeight:'900'}}>Enter Delivery Details</Text>
-          </TouchableOpacity>
+          <Text style={{color:'#FFFFFF', fontSize:20, fontFamily:'monospace', fontWeight:'900'}}>Enter Delivery Details</Text>
+      </TouchableOpacity>
       </View>):(<></>)}
+      {cartItems.length!=0?(<></>):(<></>)}
     </SafeAreaView>
   );
 };

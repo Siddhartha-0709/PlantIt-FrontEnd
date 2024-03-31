@@ -18,6 +18,7 @@ import RazorpayCheckout from 'react-native-razorpay';
 const AddressInput = ({route}) => {
   const navigation = useNavigation();
   const totalPrice = route.params.totalCost;
+  const user= route.params.user;
   const [cartItems, setCartItems] = useState(route.params.cartItems);
   const [address, setAddress] = useState({
     name: '',
@@ -26,7 +27,7 @@ const AddressInput = ({route}) => {
     state: '',
     pinCode: '',
   });
-
+  const userAccount = route.params.userAccount;
   const [modalVisible, setModalVisible] = useState(false);
   
   const states = [
@@ -104,7 +105,7 @@ const AddressInput = ({route}) => {
       {
         vpa: '6289368650@ybl', // or can be john@ybl or mobileNo@upi
         payeeName: 'Siddhartha Mukherjee',
-        amount: '10',
+        amount: totalPrice,
         transactionRef: generateTxnRef(),
       },
       successCallback,
@@ -113,12 +114,12 @@ const AddressInput = ({route}) => {
     function successCallback(data) {
       // do whatever with the data
       console.log(data);
-      navigation.navigate('Payment', {address: address, cartItems: cartItems});
+      navigation.navigate('Payment', {address: address, cartItems: cartItems, userAccount:userAccount, totalPrice:totalPrice, user:user});
     }
     function failureCallback(data) {
       // do whatever with the data
       console.log(data);
-      navigation.navigate('Payment', {address: address, cartItems: cartItems});
+      navigation.navigate('Payment', {address: address, cartItems: cartItems, userAccount: userAccount, totalPrice:totalPrice, user:user});
     }
   };
   return (
@@ -279,63 +280,13 @@ const AddressInput = ({route}) => {
           </View>
         </View>
       </Modal>
-      <View
-        style={{
-          position: 'absolute',
-          bottom: -300,
-          zIndex: 1,
-          paddingHorizontal: 5,
-        }}>
-        {/* <TouchableOpacity
-          style={{
-            backgroundColor: '#FF204E',
-            height: 50,
-            width: 400,
-            borderRadius: 10,
-            justifyContent: 'center',
-            alignItems: 'center',
-            elevation: 5,
-          }}
-          onPress={() => {
-            var options = {
-              description: 'Credits towards consultation',
-              image: 'https://i.imgur.com/3g7nmJC.jpg',
-              currency: 'INR',
-              key: 'rzp_test_2VYHu p8J177ylx',
-              amount: '5000',
-              name: 'Acme Corp',
-              order_id: '', //Replace this with an order_id created using Orders API.
-              prefill: {
-                email: 'gaurav.kumar@example.com',
-                contact: '9191919191',
-                name: 'Gaurav Kumar',
-              },
-              theme: {color: '#53a20e'},
-            };
-            RazorpayCheckout.open(options)
-              .then(data => {
-                // handle success
-                alert(`Success: ${data.razorpay_payment_id}`);
-              })
-              .catch(error => {
-                // handle failure
-                alert(`Error: ${error.code} | ${error.description}`);
-              });
-          }}>
-          <Text
-            style={{
-              color: '#FFFFFF',
-              fontSize: 18,
-              fontFamily: 'monospace',
-              fontWeight: '900',
-            }}>
-            Proceed to Payment
-          </Text>
-        </TouchableOpacity> */}
-        <TouchableOpacity style={{backgroundColor:'#FF204E', height:50,width:400, borderRadius:10, justifyContent:'center', alignItems:'center',elevation:5}}
-          onPress={handleSubmit}
-          >
-            <Text style={{color:'#FFFFFF', fontSize:18, fontFamily:'monospace', fontWeight:'900'}}>Proceed to Pay ₹{totalPrice}</Text>
+      <View style={{borderTopRightRadius:10, borderTopLeftRadius:10, position:'absolute', bottom:-335}}>
+          <Text style={{position:'absolute', zIndex:1, color:'black', fontSize:20, fontWeight:'700',fontFamily:'monospace', elevation:5, textAlign:'right',bottom:67,right:0}}>Total Amount-₹{totalPrice}</Text>
+          <Text style={{position:'absolute', zIndex:1, color:'grey', fontSize:12, fontWeight:'700',fontFamily:'monospace', elevation:5, textAlign:'right',bottom:55, right:0}}>Incl. Cart Value + ₹100(Taxes and Delivery Charges)</Text>
+          <TouchableOpacity style={{backgroundColor:'#FF204E', height:50,width:400, borderRadius:10, justifyContent:'center', alignItems:'center', marginLeft:'auto',marginRight:'auto', right:6, left:6}}
+              onPress={handleSubmit}
+              >
+              <Text style={{color:'#FFFFFF', fontSize:20, fontFamily:'monospace', fontWeight:'900'}}>Proceed to Payment</Text>
           </TouchableOpacity>
       </View>
     </SafeAreaView>

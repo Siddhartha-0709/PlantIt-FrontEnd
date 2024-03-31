@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView, Image, ActivityIndicator } from 'react-native';
 import { initializeApp } from 'firebase/app';
 import { ref, getDatabase, push } from "firebase/database";
 const firebaseConfig = {
@@ -17,24 +17,46 @@ const app = initializeApp(firebaseConfig);
 const Payment = ({route}) => {
   const cartItems = route.params.cartItems;
   const address = route.params.address;
+  const totalPrice = route.params.totalPrice;
+  const userAccount = route.params.userAccount;
+  const user= route.params.user;
   const navigation = useNavigation();
 
   const handleTrackOrders = ()=>{
-    navigation.navigate('Home'); //TODO: Change the Navigation once order page is created!
-
+    navigation.navigate('Orders', {userAccount:userAccount}); //TODO: Change the Navigation once order page is created!
   }
-  console.log("Payment Page");
-
-  const pushDatabase = (cartItems, address) => {
+  function generateUniqueOrderId(length) {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    let orderId = '';
+    
+    // Add timestamp to ensure uniqueness
+    const timestamp = Date.now().toString(36);
+    orderId += timestamp;
+  
+    // Generate random characters to complete the ID
+    for (let i = 0; i < length - timestamp.length; i++) {
+      const randomIndex = Math.floor(Math.random() * characters.length);
+      orderId += characters[randomIndex];
+    }
+    
+    return orderId;
+  }
+  const pushDatabase = (cartItems, address, userAccount) => {
     const database = getDatabase(app);
+    
     const ordersRef = ref(database, 'orders');
     push(ordersRef, {
       address: address,
-      cartItems: cartItems
+      cartItems: cartItems,
+      accountUserDetails: userAccount,
+      orderId: generateUniqueOrderId(10),
+      totalPrice:totalPrice,
+      paymentMode:'ONLINE UPI',
+      status:'Order Placed'
     });
   };
   useEffect(()=>{
-    pushDatabase(cartItems, address);
+    pushDatabase(cartItems, address, userAccount);
   })
 
   return (

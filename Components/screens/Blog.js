@@ -12,12 +12,18 @@ import React, {useEffect, useState} from 'react';
 import {getDatabase, ref, child, get} from 'firebase/database';
 import { useNavigation } from '@react-navigation/native';
 
-const Blog = () => {
+const Blog = ({route}) => {
+  const userAccount = route.params.userAccount;
   const [blogs, setBlogs] = useState([]);
   const navigation = useNavigation();
   const blogView = (data)=>{
     navigation.navigate('BlogView',{
       data:data
+    })
+  }
+  const handleUploadBlogs =()=>{
+    navigation.navigate('BlogUpload',{
+      userAccount: userAccount
     })
   }
   const getBlogs = async () => {
@@ -123,7 +129,7 @@ const Blog = () => {
         ))}
       </ScrollView>
       <TouchableOpacity style={{position:'absolute', top: 60, right: 10, backgroundColor:'black', width:100,height:40, borderRadius:20, elevation:5}}
-      onPress={()=>navigation.navigate('BlogUpload')}
+      onPress={handleUploadBlogs}
       >
         <Text style={{color: '#FFFFFF', fontSize: 20, fontWeight: '700',textAlign:'center',marginTop:'auto',marginBottom:'auto',fontFamily:'monospace'}}>
               Create

@@ -29,7 +29,7 @@ const PlantRecommendation = () => {
   }
   return (
     <SafeAreaView style={{ backgroundColor: "#000000", height: "100%" }}>
-      <TouchableOpacity>
+      {/* <TouchableOpacity>
         <Image
           source={require("../Icons/goback1.png")}
           style={{
@@ -40,7 +40,7 @@ const PlantRecommendation = () => {
             marginTop:30
           }}
         />
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <View style={{ position: "absolute", top: 10, flexDirection: "row" }}>
         <Image
           source={require("../Icons/search.png")}

@@ -12,7 +12,7 @@ const GardenRecommendationResults = ({ route }) => {
   };
   return (
     <SafeAreaView style={{ backgroundColor: "#000000", height: "100%" }}>
-        <TouchableOpacity
+        {/* <TouchableOpacity
         onPress={backPressed}
         >
           <Image
@@ -25,7 +25,7 @@ const GardenRecommendationResults = ({ route }) => {
               marginTop: 30,
             }}
           />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         <View style={{ position: "absolute", top: 10, flexDirection: "row" }}>
           <Image
             source={require("../Icons/plant1.png")}
@@ -41,26 +41,28 @@ const GardenRecommendationResults = ({ route }) => {
         <View
           style={{
             backgroundColor: "#ffffff",
-            height: 400,
+            height: 430,
             marginTop: 450,
             paddingLeft: 10,
             paddingRight: 10,
-            paddingTop: 10,
-            paddingBottom:50
+            paddingTop: 20,
+            paddingBottom:50,
+            borderTopRightRadius: 30,
+            borderTopLeftRadius: 30,
           }}
         >
           <Text
-            style={{ fontFamily: "monospace", fontSize: 20, fontWeight: "900" }}
+            style={{ fontFamily: "monospace", fontSize: 20, fontWeight: "900", color:'#000000' }}
           >
             Recommendation Results{"\n"}{" "}
           </Text>
           <Text
-            style={{ fontFamily: "monospace", fontSize: 18, fontWeight: "400" }}
+            style={{ fontFamily: "monospace", fontSize: 18, fontWeight: "400", color:'#000000' }}
           >
             Based on your preferences, we have found the following recommendations:
           </Text>
-          <ScrollView style={{height:'100%'}}>
-            <Markdown>{plant}</Markdown>
+          <ScrollView style={{height:'85%'}} contentInsetAdjustmentBehavior="automatic">
+            <Markdown style={{color:'#000000'}}>{plant}</Markdown>
           </ScrollView>
         </View>
     </SafeAreaView>

@@ -11,17 +11,32 @@ import {
   Modal,
 } from 'react-native';
 import React from 'react';
+import {
+  BallIndicator,
+  BarIndicator,
+  DotIndicator,
+  MaterialIndicator,
+  PacmanIndicator,
+  PulseIndicator,
+  SkypeIndicator,
+  UIActivityIndicator,
+  WaveIndicator,
+} from 'react-native-indicators';
 import {launchImageLibrary} from 'react-native-image-picker';
 import {useState} from 'react';
 import storage from '@react-native-firebase/storage';
 import firebase from '@react-native-firebase/app';
+import {useNavigation} from '@react-navigation/native';
 import database from '@react-native-firebase/database';
-import { set } from 'firebase/database';
+import {set} from 'firebase/database';
 
-const BlogUpload = () => {
+const BlogUpload = ({route}) => {
+  const userAccount = route.params.userAccount;
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [imageUri, setImageUri] = useState(null);
+  const navigation = useNavigation();
+  const [showLoad, setShowLoad] = useState(false);
   const pickImage = async () => {
     let options = {
       mediaType: 'photo',
@@ -40,8 +55,9 @@ const BlogUpload = () => {
     });
   };
   const handleBlogUpload = async () => {
-  var url = '';
-  console.log(imageUri);
+    setShowLoad(true);
+    var url = '';
+    console.log(imageUri);
     const reference = storage().ref(imageUri.fileName);
     const task = reference.putFile(imageUri.uri);
     task.on('state_changed', taskSnapshot => {
@@ -60,19 +76,24 @@ const BlogUpload = () => {
 
     const database = firebase.database();
     const usersRef = database.ref('blogs');
-    try{
+    const date = new Date();
+    console.log(date);
+    try {
       usersRef.push({
         title: title,
         content: content,
         imageUrl: url,
-        publisher:'Andrew',
-        publisherImage:'NA'
+        publisher: userAccount.name,
+        publisherImage: userAccount.photo,
+        publisherId: userAccount.id,
+        publisherEmail: userAccount.email,
+        datePosted: date,
       });
-      console.log('Blog uploaded successfully');
+      // console.log('Blog uploaded successfully');
       alert('Blog uploaded successfully');
-      navigation.navigate('Blogs');
-    }
-    catch(error){
+      setShowLoad(false);
+      navigation.navigate('Blogs', {userAccount:userAccount});
+    } catch (error) {
       console.log(error);
     }
   };
@@ -116,7 +137,7 @@ const BlogUpload = () => {
         <View
           style={{flexDirection: 'row', alignItems: 'center', marginTop: 10}}>
           <Image
-            source={require('../Icons/success.png')}
+            source={{uri: userAccount.photo}}
             style={{
               width: 50,
               height: 50,
@@ -124,6 +145,7 @@ const BlogUpload = () => {
               marginTop: 10,
               marginTop: 'auto',
               marginBottom: 'auto',
+              borderRadius: 30,
             }}
           />
           <Text
@@ -134,7 +156,7 @@ const BlogUpload = () => {
               fontSize: 16,
               marginLeft: 1,
             }}>
-            Siddhartha Mukherjee
+            {userAccount.name}
           </Text>
         </View>
         <View style={{paddingLeft: 10, paddingRight: 10, marginTop: 10}}>
@@ -158,9 +180,11 @@ const BlogUpload = () => {
               fontFamily: 'monospace',
               fontSize: 18,
               fontWeight: '800',
+              color: '#000000',
             }}
             maxLength={40}
             placeholder="A Stunning Blog Title"
+            placeholderTextColor={'grey'}
             onChangeText={text => {
               setTitle(text);
             }}
@@ -186,9 +210,11 @@ const BlogUpload = () => {
               fontFamily: 'monospace',
               fontSize: 15,
               fontWeight: '800',
+              color: '#000000',
             }}
             maxLength={800}
             placeholder="An Engaging Blog Content"
+            placeholderTextColor={'grey'}
             onChangeText={text => {
               setContent(text);
             }}
@@ -205,8 +231,7 @@ const BlogUpload = () => {
               alignItems: 'center',
               justifyContent: 'center',
               elevation: 5,
-            }}
-            >
+            }}>
             {!imageUri ? (
               <>
                 <Text
@@ -260,6 +285,12 @@ const BlogUpload = () => {
           </Text>
         </TouchableOpacity>
       </View>
+      {showLoad?(<Modal style={{}}>
+        <SkypeIndicator color="black" size={80} />
+        <Text style={{fontFamily: 'monospace', textAlign: 'center', color:'#000000',position:"absolute", top:500, left:'30%', fontSize:18}}>
+          Uploading Post
+        </Text>
+      </Modal>):(<></>)}
     </SafeAreaView>
   );
 };

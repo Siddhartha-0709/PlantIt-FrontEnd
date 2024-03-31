@@ -1,0 +1,57 @@
+com.plantit.app-jetified-drawee-3.1.3-0 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\025e200d7f7ea84f2965a56675de8504\transformed\jetified-drawee-3.1.3\res
+com.plantit.app-swiperefreshlayout-1.1.0-1 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\06820d864440670608022bfc4d90100a\transformed\swiperefreshlayout-1.1.0\res
+com.plantit.app-jetified-play-services-wallet-18.1.3-2 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\125f695e5440accc87469f0e321e4e3d\transformed\jetified-play-services-wallet-18.1.3\res
+com.plantit.app-core-1.9.0-3 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\2191288890acb3ddfada3069d3b6bac6\transformed\core-1.9.0\res
+com.plantit.app-browser-1.4.0-4 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\268280078e87f3dcafb5dbb02da9f44f\transformed\browser-1.4.0\res
+com.plantit.app-fragment-1.5.7-5 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\29f787267ce7fe35e554447de046b7bb\transformed\fragment-1.5.7\res
+com.plantit.app-jetified-emoji2-1.2.0-6 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\32607f51157e6638c46c36c1bdee8f5b\transformed\jetified-emoji2-1.2.0\res
+com.plantit.app-jetified-savedstate-1.2.0-7 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\3475e502b33c9120d2b709f4754e26b9\transformed\jetified-savedstate-1.2.0\res
+com.plantit.app-constraintlayout-2.0.1-8 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\3cb44e8d7485315aa2d319553d9cbe28\transformed\constraintlayout-2.0.1\res
+com.plantit.app-jetified-checkout-1.6.38-9 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\3cc150ae491273e692dfed2cc58c3be4\transformed\jetified-checkout-1.6.38\res
+com.plantit.app-jetified-emoji2-views-helper-1.2.0-10 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\46e5a09c6c02249d9a18ab2bc6b90ce1\transformed\jetified-emoji2-views-helper-1.2.0\res
+com.plantit.app-jetified-tracing-1.1.0-11 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\47bed6cc9c43a6c622ea8d4b5e4c82f6\transformed\jetified-tracing-1.1.0\res
+com.plantit.app-lifecycle-runtime-2.5.1-12 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\4bc71ba51393149601365e033d81849e\transformed\lifecycle-runtime-2.5.1\res
+com.plantit.app-appcompat-1.6.1-13 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\56e06eb9195213d05a6e15eb53816247\transformed\appcompat-1.6.1\res
+com.plantit.app-jetified-play-services-basement-18.3.0-14 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\57ab2f0c649a437d4f20b73c5227d000\transformed\jetified-play-services-basement-18.3.0\res
+com.plantit.app-jetified-play-services-maps-17.0.0-15 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\58034b564ce9f5fa67338c7542025629\transformed\jetified-play-services-maps-17.0.0\res
+com.plantit.app-jetified-firebase-common-20.4.3-16 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\6e87d847f90c8f6bfd74e8d4d099cd10\transformed\jetified-firebase-common-20.4.3\res
+com.plantit.app-transition-1.2.0-17 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\80051f081e4b6dc1d6ec3edbaaf71621\transformed\transition-1.2.0\res
+com.plantit.app-jetified-autofill-1.1.0-18 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\8305f20394eb3b743cc1c897bb3f352b\transformed\jetified-autofill-1.1.0\res
+com.plantit.app-jetified-lifecycle-process-2.4.1-19 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\96db19f0a2748783798f4cd08df4bb99\transformed\jetified-lifecycle-process-2.4.1\res
+com.plantit.app-recyclerview-1.1.0-20 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\a5c166b8b658a83d7dde8f284f5d74ce\transformed\recyclerview-1.1.0\res
+com.plantit.app-jetified-annotation-experimental-1.3.0-21 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\a9eba46da7affba4024d6c65434e6db0\transformed\jetified-annotation-experimental-1.3.0\res
+com.plantit.app-lifecycle-viewmodel-2.5.1-22 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\ad50fd07d15fa33501a226dd417b0073\transformed\lifecycle-viewmodel-2.5.1\res
+com.plantit.app-cardview-1.0.0-23 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\b6fd6e089d1fa589e7d66053083b84a2\transformed\cardview-1.0.0\res
+com.plantit.app-jetified-play-services-base-18.1.0-24 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\b7c2e0e1b7c3d2e6e3c68f63196c31e0\transformed\jetified-play-services-base-18.1.0\res
+com.plantit.app-jetified-activity-1.6.0-25 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\b84afb2f62b35a62673eb190c81c35cb\transformed\jetified-activity-1.6.0\res
+com.plantit.app-lifecycle-livedata-core-2.5.1-26 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\bbcfaf2c9e6e65c24b14560eba345ae7\transformed\lifecycle-livedata-core-2.5.1\res
+com.plantit.app-drawerlayout-1.1.1-27 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\c2f8af0b843178e5edac18aa7225192b\transformed\drawerlayout-1.1.1\res
+com.plantit.app-coordinatorlayout-1.2.0-28 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\c496c133b97f8b159cc2b486b0b992e5\transformed\coordinatorlayout-1.2.0\res
+com.plantit.app-jetified-react-android-0.73.6-release-29 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\c6319c1f7d8031929268e334d52dba53\transformed\jetified-react-android-0.73.6-release\res
+com.plantit.app-jetified-appcompat-resources-1.6.1-30 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\cc2e0b969fa250eefac52ae674b0d935\transformed\jetified-appcompat-resources-1.6.1\res
+com.plantit.app-material-1.9.0-31 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\cd2214c0cab9298ec2952acfb08c8033\transformed\material-1.9.0\res
+com.plantit.app-jetified-startup-runtime-1.1.1-32 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\dde88ecc82c371338ffc9bdef4a920ff\transformed\jetified-startup-runtime-1.1.1\res
+com.plantit.app-jetified-core-ktx-1.9.0-33 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\df618e29d0edd30ef2f86cd95c8f9a71\transformed\jetified-core-ktx-1.9.0\res
+com.plantit.app-jetified-play-services-auth-21.0.0-34 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\e48361c9d57154cdf5133ff24934526a\transformed\jetified-play-services-auth-21.0.0\res
+com.plantit.app-jetified-lifecycle-viewmodel-savedstate-2.5.1-35 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\ecc5c064ee03abb998a1e2c3b7b932ce\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\res
+com.plantit.app-jetified-viewpager2-1.0.0-36 C:\Users\Siddhartha Mukherjee\.gradle\caches\transforms-3\fe4b12472565968155fe7771764ab2ba\transformed\jetified-viewpager2-1.0.0\res
+com.plantit.app-res-37 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\android\app\build\generated\res\createBundleReleaseJsAndAssets
+com.plantit.app-pngs-38 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\android\app\build\generated\res\pngs\release
+com.plantit.app-res-39 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\android\app\build\generated\res\processReleaseGoogleServices
+com.plantit.app-resValues-40 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\android\app\build\generated\res\resValues\release
+com.plantit.app-packageReleaseResources-41 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\android\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.plantit.app-packageReleaseResources-42 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\android\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.plantit.app-merged_res-43 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\android\app\build\intermediates\merged_res\release
+com.plantit.app-main-44 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\android\app\src\main\res
+com.plantit.app-release-45 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\android\app\src\release\res
+com.plantit.app-packaged_res-46 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\node_modules\@react-native-firebase\app\android\build\intermediates\packaged_res\release
+com.plantit.app-packaged_res-47 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\node_modules\@react-native-firebase\auth\android\build\intermediates\packaged_res\release
+com.plantit.app-packaged_res-48 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\node_modules\@react-native-firebase\database\android\build\intermediates\packaged_res\release
+com.plantit.app-packaged_res-49 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\node_modules\@react-native-firebase\storage\android\build\intermediates\packaged_res\release
+com.plantit.app-packaged_res-50 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\node_modules\@react-native-google-signin\google-signin\android\build\intermediates\packaged_res\release
+com.plantit.app-packaged_res-51 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\node_modules\react-native-document-picker\android\build\intermediates\packaged_res\release
+com.plantit.app-packaged_res-52 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\node_modules\react-native-image-picker\android\build\intermediates\packaged_res\release
+com.plantit.app-packaged_res-53 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\node_modules\react-native-razorpay\android\build\intermediates\packaged_res\release
+com.plantit.app-packaged_res-54 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\node_modules\react-native-safe-area-context\android\build\intermediates\packaged_res\release
+com.plantit.app-packaged_res-55 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\node_modules\react-native-screens\android\build\intermediates\packaged_res\release
+com.plantit.app-packaged_res-56 C:\Users\Siddhartha Mukherjee\Desktop\PlantIt FrontEnd\node_modules\react-native-upi-payment\android\build\intermediates\packaged_res\release
