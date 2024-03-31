@@ -9,15 +9,12 @@
 <div style={{flexDirection:'row', justifyContent: 'center', alignItems:'center'}}>
   <img src="https://firebasestorage.googleapis.com/v0/b/plantit-416016.appspot.com/o/others%2Fphoto_6075693696956873090_y.jpg?alt=media&amp;token=a1631046-1a1a-4b30-8736-89cced3054bd" alt="project-screenshot" width="200" height="400/">
   
-  <img src="https://firebasestorage.googleapis.com/v0/b/plantit-416016.appspot.com/o/others%2Fphoto_6075693696956873091_y.jpg?alt=media&amp;token=edec792a-55e4-4efe-aef3-b721fa972dbd" alt="project-screenshot" width="200" height="400/">
-  
   <img src="https://firebasestorage.googleapis.com/v0/b/plantit-416016.appspot.com/o/others%2Fphoto_6075693696956873095_y.jpg?alt=media&amp;token=f9a59c04-4651-4ac3-890d-ce2552aa2dec" alt="project-screenshot" width="200" height="400/">
   
   <img src="https://firebasestorage.googleapis.com/v0/b/plantit-416016.appspot.com/o/others%2Fphoto_6075693696956873092_y.jpg?alt=media&amp;token=a173cef1-27b1-430f-89a7-df666ccef01e" alt="project-screenshot" width="200" height="400/">
   
   <img src="https://firebasestorage.googleapis.com/v0/b/plantit-416016.appspot.com/o/others%2Fphoto_6075693696956873093_y.jpg?alt=media&amp;token=05361aeb-9a47-4ce2-ae75-0cbfedfbd25f" alt="project-screenshot" width="200" height="400/">
   
-  <img src="https://firebasestorage.googleapis.com/v0/b/plantit-416016.appspot.com/o/others%2Fphoto_6075693696956873094_y.jpg?alt=media&amp;token=e246a26d-24ea-49d7-9df3-0e9926edadc2" alt="project-screenshot" width="200" height="400/">
 </div>
 
   
